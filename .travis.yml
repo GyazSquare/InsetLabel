@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode8.2
+before_install:
+  - gem install xcpretty
+before_script:
+  - set -o pipefail
+script:
+  - xcodebuild -project InsetLabelExample/InsetLabelExample.xcodeproj -scheme InsetLabelExample -destination 'platform=iOS Simulator,name=iPhone 7' -sdk iphonesimulator test | xcpretty -c

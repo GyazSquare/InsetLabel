@@ -1,6 +1,6 @@
 language: objective-c
 osx_image: xcode8.2
-xcode_project: InsetLabelExample.xcodeproj
+xcode_project: InsetLabelExample/InsetLabelExample.xcodeproj
 xcode_scheme: InsetLabelExample
 xcode_sdk: iphonesimulator10.2
 notifications:

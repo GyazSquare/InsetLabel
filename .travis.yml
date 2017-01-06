@@ -1,11 +1,10 @@
 language: objective-c
 osx_image: xcode8.2
-before_install:
-  - gem install xcpretty
-before_script:
-  - set -o pipefail
-script:
-  - xcodebuild -project InsetLabelExample/InsetLabelExample.xcodeproj -scheme InsetLabelExample -destination 'platform=iOS Simulator,name=iPhone 7' -sdk iphonesimulator10.2 test | xcpretty -c
+xcode_project: InsetLabelExample.xcodeproj
+xcode_scheme: InsetLabelExample
+xcode_sdk:
+  - 10.2
+  - 8.1
 notifications:
   slack:
     secure: S0vgR8hOorQ4aJFoRroP/Q6FcvGOZJpcOkiqTKWKvV07u98bqg8h4CkFvmi3grAFf8KlxXdwHZ7K2zR4q9XbAZvEX3RDtDM9GMm6KFKm1k5LqWPmsl+7XZlxKTLb/Xmajm16tpqYK79jqt1F/B4GBcAb0iTOaltWMTP5e7BbAvqb4PY/l7I4JmaXBy0sNixo6ClP5a5Qp0wZfP3XbwIfrAQHOJTsoDzppJAjM/AfLW1/Fr8c5tAI1sFKe2jaHVOCS+D2HmitNYBjOiW+IxQFhlbrp5CyTlyLUpGtosDJX7ZsK+2o6lvOxABH9uTPFQW/Z5lFjyCwPqWoFbBb4j4lhtknNrdyw1X1ZD1B0GWZQ828NT5HZJhivFeTvYBCqDsw0p77LjF9ynVOjZHoATOjGR4AsRZ1EoSnqfIr58De8ral1e+GH7MLuWfvtV9aoyBELbwQOvjyljNZPGqUcrpDx42UZgw477Bb6TMOupM36roP6fhci3zchXHv62pucZC/bq0UXKzB8prN1q0zUoWMxLwJofaKRRTF8k/0ecONx5sTcyg+8fpcSNShNy4Zy+C85T2gvZBg9o56hL5irlj6FhsuZea5vAc2KLDiCn7VPbhttFvOzGskr+DMeB0Uz5sjlMYkInKkKov3ZA5KpMFv0nWadlWTuwaBKB/C1TOvM3c=

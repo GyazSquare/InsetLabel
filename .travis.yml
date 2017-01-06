@@ -5,7 +5,7 @@ before_install:
 before_script:
   - set -o pipefail
 script:
-  - export IOS_SIMULATOR_ID=`xcrun instruments -s devices | sed -n -E 's/^iPhone 7 Plus \(10\.2\)[^+]*\[([[:xdigit:]-]{36})].*\(Simulator\)$/\1/p' | tr -d '\n'`
+  - export IOS_SIMULATOR_ID=`xcrun instruments -s devices | sed -n -e 's/^iPhone 7 Plus (10\.2)[^+]*\[\([[:xdigit:]-]\{36\}\)].*(Simulator)$/\1/p' | tr -d '\012'`
   - xcodebuild -project InsetLabelExample/InsetLabelExample.xcodeproj -scheme InsetLabelExample -destination id=${IOS_SIMULATOR_ID} -sdk iphonesimulator10.2 test | xcpretty -c
 notifications:
   slack:

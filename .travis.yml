@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode8.2
 env:
-  - IOS_SIMULATOR_ID=`xcrun instruments -s devices | sed -n -e 's/^iPhone 7 Plus (10\.2)[^+]*\[\([[:xdigit:]-]\{36\}\)].*(Simulator)$/\1/p' | tr -d '\012'`
+  - IOS_SIMULATOR_ID=$(xcrun instruments -s devices | sed -n -e 's/^iPhone 7 Plus (10\.2)[^+]*\[\([[:xdigit:]-]\{36\}\)].*(Simulator)$/\1/p' | tr -d '\012')
 before_install:
   - gem install xcpretty
 before_script:

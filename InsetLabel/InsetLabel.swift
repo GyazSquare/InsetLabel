@@ -4,6 +4,7 @@
 
 import UIKit.UILabel
 
+@IBDesignable
 @objc(GSLInsetLabel)
 open class InsetLabel: UILabel {
     // MARK: Properties
@@ -11,6 +12,54 @@ open class InsetLabel: UILabel {
     open var contentInsets: UIEdgeInsets = .zero {
         didSet {
             invalidateIntrinsicContentSize()
+        }
+    }
+
+    @IBInspectable
+    open var contentInsetsTop: CGFloat {
+        get {
+            return contentInsets.top;
+        }
+        set {
+            var contentInsets = self.contentInsets
+            contentInsets.top = newValue
+            self.contentInsets = contentInsets
+        }
+    }
+
+    @IBInspectable
+    open var contentInsetsLeft: CGFloat {
+        get {
+            return contentInsets.left;
+        }
+        set {
+            var contentInsets = self.contentInsets
+            contentInsets.left = newValue
+            self.contentInsets = contentInsets
+        }
+    }
+
+    @IBInspectable
+    open var contentInsetsBottom: CGFloat {
+        get {
+            return contentInsets.bottom;
+        }
+        set {
+            var contentInsets = self.contentInsets
+            contentInsets.bottom = newValue
+            self.contentInsets = contentInsets
+        }
+    }
+
+    @IBInspectable
+    open var contentInsetsRight: CGFloat {
+        get {
+            return contentInsets.right;
+        }
+        set {
+            var contentInsets = self.contentInsets
+            contentInsets.right = newValue
+            self.contentInsets = contentInsets
         }
     }
 

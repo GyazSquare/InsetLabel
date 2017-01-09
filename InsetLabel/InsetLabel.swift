@@ -21,9 +21,7 @@ open class InsetLabel: UILabel {
             return contentInsets.top;
         }
         set {
-            var contentInsets = self.contentInsets
             contentInsets.top = newValue
-            self.contentInsets = contentInsets
         }
     }
 
@@ -33,9 +31,7 @@ open class InsetLabel: UILabel {
             return contentInsets.left;
         }
         set {
-            var contentInsets = self.contentInsets
             contentInsets.left = newValue
-            self.contentInsets = contentInsets
         }
     }
 
@@ -45,9 +41,7 @@ open class InsetLabel: UILabel {
             return contentInsets.bottom;
         }
         set {
-            var contentInsets = self.contentInsets
             contentInsets.bottom = newValue
-            self.contentInsets = contentInsets
         }
     }
 
@@ -57,9 +51,7 @@ open class InsetLabel: UILabel {
             return contentInsets.right;
         }
         set {
-            var contentInsets = self.contentInsets
             contentInsets.right = newValue
-            self.contentInsets = contentInsets
         }
     }
 

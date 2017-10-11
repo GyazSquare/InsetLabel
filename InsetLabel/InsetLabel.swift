@@ -79,6 +79,11 @@ open class InsetLabel: UILabel {
         let newRect = UIEdgeInsetsInsetRect(rect, contentInsets)
         super.drawText(in: newRect)
     }
+    
+    override open func layoutSubviews() {
+        super.layoutSubviews()
+        preferredMaxLayoutWidth = frame.width - (contentInsetsLeft + contentInsetsRight)
+    }
 
     // MARK: UIView (UIConstraintBasedLayoutLayering)
 

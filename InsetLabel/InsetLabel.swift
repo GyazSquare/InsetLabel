@@ -7,6 +7,7 @@ import UIKit.UILabel
 @IBDesignable
 @objc(GSLInsetLabel)
 open class InsetLabel: UILabel {
+    
     // MARK: Properties
 
     open var contentInsets: UIEdgeInsets = .zero {
@@ -79,6 +80,8 @@ open class InsetLabel: UILabel {
         let newRect = UIEdgeInsetsInsetRect(rect, contentInsets)
         super.drawText(in: newRect)
     }
+    
+    // MARK: UIView (UIViewHierarchy)
     
     override open func layoutSubviews() {
         super.layoutSubviews()

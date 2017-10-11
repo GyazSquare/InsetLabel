@@ -9,8 +9,8 @@ InsetLabel is a UILabel subclass supporting content insets written in Swift.
 
 ## Requirements
 
-* Xcode 8.3 (Swift 3.1) or later
-* Base SDK: iOS 10.3 / tvOS 10.2 or later
+* Xcode 9 (Swift 4.0) or later
+* Base SDK: iOS 11.0 / tvOS 11.0 or later
 * Deployment Target: iOS 8.0 / tvOS 9.0 or later
 
 ## Installation

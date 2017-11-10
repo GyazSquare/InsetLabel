@@ -11,7 +11,7 @@
                    (let ((d (dir-locals-find-file ".")))
                      (if (stringp d) d (car d))))))))
  (swift-mode
-  . ((flycheck-swift3-xcrun-sdk . "iphoneos11.0")
+  . ((flycheck-swift3-xcrun-sdk . "iphoneos11.1")
      (flycheck-swift3-target . "arm64-apple-ios8")
      (eval . (set (make-local-variable 'library-root)
                   (expand-file-name "InsetLabel" project-dir)))

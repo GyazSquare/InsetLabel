@@ -1,8 +1,8 @@
 language: objective-c
-osx_image: xcode9
+osx_image: xcode9.1
 xcode_project: InsetLabelExample/InsetLabelExample.xcodeproj
 xcode_scheme: InsetLabelExample
-xcode_sdk: iphonesimulator11.0
+xcode_sdk: iphonesimulator11.1
 before_install:
   - gem install xcpretty
 script:

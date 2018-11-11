@@ -19,7 +19,7 @@ class ViewController: UIViewController {
             labels.forEach {
                 if (sender.isOn) {
                     let inset = $0.font.pointSize / 4
-                    $0.contentInsets = UIEdgeInsetsMake(inset, inset, inset, inset)
+                    $0.contentInsets = UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
                 } else {
                     $0.contentInsets = .zero
                 }

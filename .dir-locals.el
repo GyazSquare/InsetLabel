@@ -21,7 +21,7 @@
       . ((eval . (set 'flycheck-swift3-inputs library-sources))))))
  (swift-mode
   . ((flycheck-swift3-xcrun-sdk . "iphoneos")
-     (flycheck-swift3-target . "arm64-apple-ios8")
+     (flycheck-swift3-target . "arm64-apple-ios9")
      (eval . (set (make-local-variable 'library-root)
                   (expand-file-name "InsetLabel" project-dir)))
      (eval . (set (make-local-variable 'library-sources)

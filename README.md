@@ -11,7 +11,7 @@ InsetLabel is a UILabel subclass supporting content insets written in Swift.
 
 * Xcode 12.0 (Swift 5.3) or later
 * Base SDK: iOS 14.0 / tvOS 14.0 or later
-* Deployment Target: iOS 9.0 / tvOS 9.0 or later
+* Deployment Target: iOS 7.0 / tvOS 9.0 or later
 
 ## Installation
 
@@ -20,7 +20,7 @@ InsetLabel is a UILabel subclass supporting content insets written in Swift.
 Add the pod to your `Podfile`:
 
 ```ruby
-platform :ios, '9.0'
+platform :ios, '7.0'
 use_frameworks!
 
 # ... snip ...
